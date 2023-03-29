@@ -1,7 +1,17 @@
 body {
     background-color: rgb(72, 160, 111);
-};
-
-ribbon {
-padding: 10px;
 }
+
+.ribbon {
+padding: 10px;
+border: 10px;
+border-color: black;
+background-color: beige;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    margin: 30px;
+    border: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+};
