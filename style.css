@@ -17,31 +17,35 @@ body {
 header {
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
-    border: 10px;
+    border: 10px black inset;
     width: 95%;
-    display: flexbox;
-    border-color: black;
-    border-style: inset;
     background-color: rgb(252, 252, 117);
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     position: fixed; 
 }
 
 main {
     margin: 20px;
     border: 5px;
-    display: flexbox;
     padding: 20% 10% 0% 10%;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
 
-#maincontent {
+#aboutbox {
+    margin: 20px;
+    border: 5px;
+    padding: 20% 10% 0% 10%;
+    display: flexbox;
+}
+
+.maincontent1 {
+    flex-direction: column;
+    
+}
+
+.maincontent {
     margin: 25px;
     padding: 15px;
-    border: 5px;
-    border-style: groove;
-    background-color: rgb(252, 252, 117);
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    border: 10px black inset;
+    background-color: rgb(252, 173, 113);
 }
 
 h2, h3, h4 {
@@ -51,18 +55,20 @@ h2, h3, h4 {
 h1 {
     text-align: center;
     font-style: oblique;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
 
 .coffee {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto auto auto;
     width: 50%;
 }
 
 form {
-    border: 5px black;
-    background-color:  rgb(252, 252, 117);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border: 10px;
+    width: 75%;
+    border: 10px black inset;
+    background-color: rgb(252, 173, 113);;
     padding: 5% 10% 5% 10%;
 }
