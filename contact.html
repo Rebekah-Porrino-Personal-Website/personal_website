@@ -4,8 +4,8 @@
     <script defer src="javascript.js"></script></head>
 </head>
 <body>
-    <section class="ribbon">
-        <header>
+    <section>
+        <header class="ribbon">
             <span>Rebekah Porrino</span>
             <nav class="links">
             <a href="index.html">HOME</a>
@@ -15,5 +15,24 @@
             </nav>
         </header>
     </section>
+    <main>
+        <div>
+            <h2>I would love to hear from you!</h2><br/>
+            <h3>Please submit your name, contact information and a brief message.</h3>
+        </div>
+        <article>
+            <form action="formsubmitted.html">
+                <label for="fname">First Name</label><br/>
+                <input type="text" id="fname" name="" /><br/>
+                <label for="lname">Last Name</label><br/>
+                <input type="text" id="lname" name="" /><br/>
+                <label for="email">Email</label><br/>
+                <input type="email" id="email" name="email"/><br/>
+                <label for="text-area"> Message </label><br/>
+                <textarea id="text-area" name="description" row="4" cols="50"></textarea><br/>
+                <input type="submit" value="Submit" />
+            </form>
+        </article>
+    </main>
 </body>
 </html>
