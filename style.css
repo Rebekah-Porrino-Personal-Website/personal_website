@@ -21,26 +21,67 @@ header {
     width: 95%;
     background-color: rgb(252, 252, 117);
     position: fixed; 
+    font-size: larger;
+}
+
+a:hover {
+    background-color: aliceblue;
 }
 
 main {
-    margin: 20px;
+    margin: 50px;
     border: 5px;
     padding: 20% 10% 0% 10%;
+    align-items: center;
+    text-align: center;
 }
 
+/* about.html specific formatting */
 #aboutbox {
-    margin: 20px;
-    border: 5px;
-    padding: 20% 10% 0% 10%;
-    display: flexbox;
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+    border: 10px black inset;
+    background-color: rgb(252, 173, 113);
+    height: 100% vh;
+
 }
 
 .maincontent1 {
-    flex-direction: column;
-    
+    width: 300px;
+    grid-auto-flow: dense;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} 
+
+.journey {
+    width: 500px;
+    height: 200px;
+    align-items: center;
+    border-radius: 40px;
+    grid-auto-flow: dense;
+    /* padding: 5px 5px 5px 5px; */
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
+.maincontent2 {
+    width: 500px;
+    height: 200px;    
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+/* this is for the rest of the website box formatting */
 .maincontent {
     margin: 25px;
     padding: 15px;
