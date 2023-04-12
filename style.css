@@ -1,44 +1,115 @@
 body {
     background-color: rgb(65, 184, 213);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.ribbon {
+
+/* .ribbon {
     padding: 10px;
     border: 10px;
+    width: 90%;
     border-color: black;
     border-style: inset;
     background-color: beige;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: fixed; 
+} */
+
+header {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border: 10px black inset;
+    width: 95%;
+    background-color: rgb(252, 252, 117);
+    position: fixed; 
+    font-size: larger;
+}
+
+a:hover {
+    background-color: aliceblue;
 }
 
 main {
-    margin: 30px;
+    margin: 50px;
     border: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20% 10% 0% 10%;
+    align-items: center;
+    text-align: center;
 }
 
-div {
-    margin: 30px;
+/* about.html specific formatting */
+#aboutbox {
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+    border: 10px black inset;
+    background-color: rgb(252, 173, 113);
+    height: 100% vh;
+
+}
+
+.maincontent1 {
+    width: 300px;
+    grid-auto-flow: dense;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} 
+
+.journey {
+    width: 500px;
+    height: 200px;
+    align-items: center;
+    border-radius: 40px;
+    grid-auto-flow: dense;
+    /* padding: 5px 5px 5px 5px; */
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.maincontent2 {
+    width: 500px;
+    height: 200px;    
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+/* this is for the rest of the website box formatting */
+.maincontent {
+    margin: 25px;
     padding: 15px;
-    border: 5px;
-    border-style: groove;
-    background-color: rgb(252, 252, 117);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 10px black inset;
+    background-color: rgb(252, 173, 113);
 }
 
-h2 {
+h2, h3, h4 {
     text-align: center;
 }
 
 h1 {
     text-align: center;
     font-style: oblique;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .coffee {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto auto auto;
     width: 50%;
+}
+
+form {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border: 10px;
+    width: 75%;
+    border: 10px black inset;
+    background-color: rgb(252, 173, 113);;
+    padding: 5% 10% 5% 10%;
 }
